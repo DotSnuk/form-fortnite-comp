@@ -7,7 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Testing
+    <div class="container">
+        <div class="heading">
+            <h1>Fictional Fortnite Competition</h1>
+            <h2>Want to compete alone or with imaginary friends?</h2>
+        </div>
+        <div class="form">
+            <form action="competition/path" method="post">
+            <fieldset class="comp-type">
+                <input type="radio" id="build" name="comp-type" value="build">
+                <label for="build" class="radio-label">Build</label>
+                <input type="radio" id="zeroBuild" name="comp-type" value="zeroBuild">
+                <label for="zeroBuild" class="radio-label">Zero Build</label>
+            </fieldset>
+            <fieldset class="squadSize">
+                <input type="radio" id="solo" name="squadSize" value="solo">
+                <label for="solo" class="radio-label">Solo</label>
+                <input type="radio" id="duo" name="squadSize" value="duo">
+                <label for="duo" class="radio-label">Duos</label>
+                <input type="radio" id="trio" name="squadSize" value="trio">
+                <label for="trio" class="radio-label">Trios</label>
+                <input type="radio" id="quad" name="squadSize" value="quad">
+                <label for="quad" class="radio-label">Quads</label>
+            </fieldset>
+            <fieldset class="names">
+                <ul>
+                <li>
+                <label for="nameOne" class="nameClass">Player 1: </label>
+                <input type="text" id="nameOne" value="name">
+                </li>
+                <li>
+                <label for="nameTwo" class="nameClass">Player 2: </label>
+                <input type="text" id="nameTwo" value="name">
+                </li>
+                <li>
+                <label for="nameThree" class="nameClass">Player 3: </label>
+                <input type="text" id="nameThree" value="name">
+                </li>
+                <li>
+                <label for="nameFour" class="nameClass">Player 4: </label>
+                <input type="text" id="nameFour" value="name">
+                </li>
+                </ul>   
+            </fieldset>
+            <fieldset>
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="email" placeholder="abc@email.com">
+            </fieldset>
+            <fieldset>
+            <label for="notes">Notes: </label>
+            <textarea name="note" id="notes" cols="30" rows="10">Optional notes</textarea>
+            </fieldset>
+            <fieldset>
+                <button>Submit</button>
+            </fieldset>
+            </form>
+        </div>
+    </div> 
     
 </body>
 </html>

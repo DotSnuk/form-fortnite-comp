@@ -1,7 +1,7 @@
 const squadRB = document.querySelectorAll('.squadInput');
 squadRB.forEach(o => {
         o.addEventListener('click', e => {
-            alert(e.target.id);
+            createInput();
     })
 })
 
@@ -19,3 +19,12 @@ function getSquadSize(n) {
             break;
     }
 }
+
+function createInput() {
+    const nameContainer = document.querySelector('.names');
+    let input = document.createElement('input');
+    input.type = 'text';
+    nameContainer.appendChild(input);
+}
+
+/* create function that first makes <li>, then for each input, have them in a <ul> */

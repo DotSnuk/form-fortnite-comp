@@ -5,7 +5,7 @@ squadRB.forEach(o => {
     })
 })
 
-function getSquadSize(n) {
+function getSquadSize(n){
     switch(n){
         case 'solo':
             return 1;
@@ -20,11 +20,16 @@ function getSquadSize(n) {
     }
 }
 
-function createInput() {
+function createInput(){
     const nameContainer = document.querySelector('.names');
     let input = document.createElement('input');
     input.type = 'text';
     nameContainer.appendChild(input);
 }
 
+function createList(){
+    const nameContainer = document.querySelector('.names');
+    const list = document.createElement('ul');
+    const lItem = document.createElement('li');
+}
 /* create function that first makes <li>, then for each input, have them in a <ul> */

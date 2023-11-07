@@ -1,7 +1,7 @@
 const squadRB = document.querySelectorAll('.squadInput');
 squadRB.forEach(o => {
         o.addEventListener('click', () => {
-            if (document.getElementsByClassName('names').firstChild){
+            if (document.querySelector('.names').childElementCount !== 0){
                 console.log('has children!');
             }
             createList(getSquadSize(o.id));

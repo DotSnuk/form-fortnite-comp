@@ -35,7 +35,6 @@ function createList(n){
     const list = document.createElement('ul');
     nameContainer.appendChild(list);
     for (var i = 0; i < n; i++){
-        // needs to be resetted each time radiobutton is clicked #futurenote
         const lItem = document.createElement('li');
         list.appendChild(lItem);
         let nameLabel = document.createElement('label');
@@ -53,8 +52,6 @@ function createList(n){
 function resetNames(){
     const nameClass = document.querySelector('.names');
     while(nameClass.childElementCount !== 0){
-        // document.removeChild('.names');
         nameClass.removeChild(nameClass.firstChild);
     }
 }
-/* create function that first makes <li>, then for each input, have them in a <ul> */

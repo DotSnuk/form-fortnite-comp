@@ -88,6 +88,6 @@ form, .heading {
 
 @media only screen and (max-width: 700px) {
     .squadSize {
-        flex-wrap: wrap;
+        
     }
 }

@@ -87,7 +87,25 @@ form, .heading {
 }
 
 @media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    form, .heading {
+        width: 60vw;
+    }
+    fieldset > label[for="mail"], fieldset > label[for="notes"]{
+        text-align: left;
+        align-self: flex-start;
+    }
+    fieldset:nth-last-of-type(-n+3) {
+        flex-direction: column;
+        text-align: left;
+    }
     .squadSize {
+        flex-wrap: wrap;
         
     }
 }
